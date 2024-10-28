@@ -11,6 +11,10 @@ Smart Clipboard 还支持用户自定义提示词，允许用户添加特定的�
 # 程序截图
 ![alt text](image-1.png)
 
+# 特别说明
+本程序开发之初考虑到给公司内网开发人员使用，所以没有直接使用ChatGPT API，而是使用了一个内网服务器，所有的请求都发送到内网服务器，内网服务器再去调用ChatGPT API。这也是为什么程序中是SERVER_URL指向http://192.168.2.252:8000/aigenerate，而不是ChatGPT API的地址。如果需要使用ChatGPT API，请修改SERVER_URL为ChatGPT API的地址，并修改发送请求的代码。
+如果想和我一样使用内网服务器，这里提供内网服务器的代码供参考，文件为：SmartClipboardServer.py
+
 # 功能介绍
     1、复制文字或图片后，按下快捷键Alt+鼠标左键，即可唤出对话框
     2、对话框左侧展示复制的内容
