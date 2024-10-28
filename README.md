@@ -20,15 +20,21 @@ Smart Clipboard 还支持用户自定义提示词，允许用户添加特定的�
 如果想和我一样使用内网服务器，这里提供内网服务器的代码供参考，文件为：SmartClipboardServer.py
 
 # 使用方法
-    1、本程序基于python3.8开发，请确保你的电脑安装了python3.8
-    2、克隆本项目到本地
-    3、安装依赖库：pip install -r requirements.txt ,或者自行解决依赖问题
-    4、使用pyinstaller打包成exe文件：
-    ```
-    pyinstaller --onefile --windowed --icon=favicon.ico window.py
-    ```
-    5、运行生成的exe文件
-    6、按下Alt+鼠标左键，即可唤出对话框
+1、本程序基于python3.8开发，请确保你的电脑安装了python3.8
+
+2、克隆本项目到本地
+
+3、安装依赖库：pip install -r requirements.txt ,或者自行解决依赖问题
+
+4、使用pyinstaller打包成exe文件：
+
+```
+pyinstaller --onefile --windowed --icon=favicon.ico window.py
+```
+
+5、运行生成的exe文件
+
+6、按下Alt+鼠标左键，即可唤出对话框
 
 # 功能介绍
     1、复制文字或图片后，按下快捷键Alt+鼠标左键，即可唤出对话框
