@@ -408,13 +408,14 @@ def on_ctrl_mouse_right():
 # 定义按键按下和释放的动作
 def on_press(key):
     global ctrl_pressed
-    if key == pynput_keyboard.Key.alt_l or key == pynput_keyboard.Key.alt_l:
+    # 允许左或右 Alt 键触发
+    if key == pynput_keyboard.Key.alt_l or key == pynput_keyboard.Key.alt_r:
         ctrl_pressed = True
 
 
 def on_release(key):
     global ctrl_pressed
-    if key == pynput_keyboard.Key.alt_l or key == pynput_keyboard.Key.alt_l:
+    if key == pynput_keyboard.Key.alt_l or key == pynput_keyboard.Key.alt_r:
         ctrl_pressed = False
 
 
