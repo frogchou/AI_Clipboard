@@ -327,7 +327,7 @@ def get_answer_from_ai(messages, callback):
             response = requests.post(SERVER_URL, headers=headers, json=data)
 
             if response.status_code == 200:
-                status_label.config(text="Success Get Response Form Server")
+                status_label.config(text="Success Get Response From Server")
                 callback(response.json()["analysis_result"])
             else:
                 print("Failed to get response:", response.status_code, response.text)
